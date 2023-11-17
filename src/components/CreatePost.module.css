@@ -14,17 +14,17 @@
 .browse_photo{
     display: flex;
     flex-direction: column;
-    
 }
 
 .create_post{
     display: flex;
     flex-direction: column;
     gap: 1rem;
-
+    
 }
 
 .browse_img{
+    object-fit: cover;
     height: 300px;
     width: 100%;
     margin-bottom: 1rem;

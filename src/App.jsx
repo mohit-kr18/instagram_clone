@@ -3,7 +3,6 @@ import Layout from './components/Layout'
 import Home from './components/Home'
 import SavedPost from './components/SavedPost'
 import Login from './auth/Login'
-import SignUp from './auth/SignUp'
 
 function App() {
   return (
@@ -13,9 +12,8 @@ function App() {
             <Route element={<Layout/>}>
               <Route path='/' element={<Home/>}/>
               <Route path='/savedPost' element={<SavedPost/>}/>
-              <Route path ="/login" element={<Login/>}></Route>
-              <Route path ="/signup" element={<SignUp/>}></Route> 
             </Route>
+              <Route path ="/login" element={<Login/>}></Route>
           </Routes>
         </BrowserRouter>
     </>

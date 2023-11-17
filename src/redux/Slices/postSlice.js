@@ -9,11 +9,15 @@ const postSlice = createSlice({
     initialState,
     reducers:{
         createPost(state,action){
-            state.posts.push(action.payload)
+            state.posts.unshift(action.payload)
+            localStorage.setItem("posts",JSON.stringify(state.posts))
+        },
+        setPosts(state,action){
+            state.posts = action.payload;
             localStorage.setItem("posts",JSON.stringify(state.posts))
         }
     }
 })
 
 export default postSlice.reducer;
-export const {createPost} = postSlice.actions
+export const {createPost,setPosts} = postSlice.actions

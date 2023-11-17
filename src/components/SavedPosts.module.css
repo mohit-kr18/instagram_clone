@@ -1,3 +1,16 @@
-.bookmark{
+.savedpost{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 360px);
     padding: 1rem;
+}
+
+.empty{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.empty img{
+    height: auto;
+    width: 300px;
 }

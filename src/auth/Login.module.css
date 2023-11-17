@@ -1,52 +1,88 @@
-
 .login{
+    padding: 3rem;
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
     justify-content: center;
-    align-items: center;
-    border-radius: 1rem;
-    background-color: white;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    padding: 1rem;
-    width: 360px;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Poppins', sans-serif;
-    margin: auto;
-    margin-top: 5rem;
+    gap: 2rem;
+   
 }
 
 .heading{
-    font-weight: bold;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
 }
 
-.username{
+.login_img img{
+    height: 500px;
+}
+
+.login_details{
+    border: 1px solid rgb(156, 154, 154);
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    width: 100%;
+    max-width: 400px;
 }
 
-.password{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+.login_details input{
     width: 100%;
+    padding: 0.5rem;
+    background-color: #fafafa;
+    outline: none;
+    border: 1px solid rgb(156, 154, 154);
+    border-radius: 6px;
 }
 
 .btn{
     width: 100%;
     padding: 0.5rem;
-    border-top-right-radius:   1rem;
-    border-top-left-radius: 1rem;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
     font-size: 1rem;
     font-weight: 600;
-    background-color: #8d61f1;
+    background-color: rgb(76, 181, 249);
     color: white;
     border: none;
     margin-bottom: 1rem;
+    min-width: 300px;
+    border-radius: 10px;
+}
+
+.forget{
+    text-align: center;
+    font-size: 0.8rem;
+    color: rgb(76, 181, 249);
+}
+
+.oauth {
+    display: flex;
+    gap: 4rem;
+    padding: 0.5rem 1rem;
+    justify-content: center;
+    border: 1px solid rgb(156, 154, 154);
+    border-radius: 10px;
+}
+
+.google {
+    display: flex;
+    font-size: 1rem;
+    color: #858585;
+    gap: 0.75rem;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
 }
 
 
+.other_method p{
+    text-align: center;
+}
+
+.note{
+    text-align: center;
+    font-style: italic;
+}
+
+@media (max-width: 768px){
+    .login_img{
+        display: none;
+    }
+}

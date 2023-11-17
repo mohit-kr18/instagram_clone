@@ -1,4 +1,4 @@
-.container{
+.posts{
     display: flex;
     gap: 0.5rem;
     padding: 1rem;
@@ -6,4 +6,11 @@
     flex-direction: column;
     max-width: 400px;
     margin: 0 auto;
+}
+
+.greeting{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1rem;
 }

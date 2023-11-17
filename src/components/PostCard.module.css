@@ -41,9 +41,20 @@
     gap: 1rem;
 }
 
+.like_comment_share > *{
+    cursor: pointer;
+}
+
+
 .save{
     padding: 0.7rem;
     /* border: 2px solid gray; */
+}
+
+.save button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 }
 
 .red_heart{
