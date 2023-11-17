@@ -1,0 +1,9 @@
+.container{
+    display: flex;
+    gap: 0.5rem;
+    padding: 1rem;
+    /* grid-template-columns: repeat(auto-fit, 280px); */
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
